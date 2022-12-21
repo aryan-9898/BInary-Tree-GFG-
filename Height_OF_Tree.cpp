@@ -1,8 +1,9 @@
-int height(struct Node* node){
-        if(root==NULL){
+    int height(struct Node* node){
+        if(node==NULL){
             return 0;
         }
         
         
-        return max(height(root->left),height(root->right))+1;
-}
+        return max(height(node->left),height(node->right))+1;
+
+    }
